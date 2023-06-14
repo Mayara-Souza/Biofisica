@@ -1,0 +1,105 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  background-color: #001220;
+  font-family: "Poppins", sans-serif;
+}
+
+#header_area {
+  width: 100vw;
+  position: relative;
+  height: 150px;
+  margin-bottom: 1.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#header_area img{
+  position: absolute;
+  top: 0;
+  width: 100vw;
+}
+
+#header_area h1 {
+  position: relative;
+  color: rgba(255, 255, 255, 0.8);
+  z-index: 1;
+  font-family: inherit;
+  background-color: transparent;
+}
+
+/* container de cards */
+.container .cards {
+  position: relative;
+  z-index: 999;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  gap: 10px;
+  width: 100vw;
+  /* link ao redor de cada card*/
+  /* Estilos para o card */
+}
+.container .cards a:link {
+  text-decoration: none;
+}
+.container .cards a[aria-current=page] {
+  pointer-events: none;
+  cursor: not-allowed;
+  text-decoration: none;
+  opacity: 0.5;
+}
+.container .cards .card {
+  color: rgba(255, 255, 255, 0.8);
+  width: 100%;
+  height: 100px;
+  padding: 0.6rem;
+  border: 1px solid #007bff;
+  border-radius: 10px;
+  background-color: transparent;
+  transition: transform 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  cursor: pointer;
+}
+.container .cards .card h2 {
+  text-transform: uppercase;
+  font-size: 1rem;
+}
+.container .cards .card a:visited {
+  color: inherit;
+}
+.container .cards .card span:first-of-type {
+  font-size: 0.6rem, box-shadow 0.3s;
+  display: none;
+}
+.container .cards .card:hover {
+  transform: scale(1.2);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+.container .cards .card:hover span:first-of-type {
+  display: block;
+}
+
+@media screen and (min-width: 768px) {
+  .container .cards {
+    grid-template-columns: repeat(4, 1fr);
+    max-width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media screen and (max-width: 767px) {
+  .card {
+    width: 100%;
+  }
+  h2 {
+    font-size: 1.2rem;
+  }
+}/*# sourceMappingURL=main.css.map */
