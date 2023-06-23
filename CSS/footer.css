@@ -1,0 +1,10 @@
+footer {
+  position: absolute;
+  bottom: 12px;
+  width: 100vw;
+  height: 1rem;
+  text-align: center;
+}
+footer p {
+  font-size: 0.75rem;
+}/*# sourceMappingURL=footer.css.map */

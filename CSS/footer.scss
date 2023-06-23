@@ -1,0 +1,12 @@
+footer {
+    position: absolute;
+    bottom: 12px;
+    width: 100vw;
+    height: 1rem;
+    text-align: center;
+
+    & p{
+        font-size: .75rem;
+    }
+}
+

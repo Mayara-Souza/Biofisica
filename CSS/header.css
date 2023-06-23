@@ -1,0 +1,16 @@
+#header_area {
+  width: 100vw;
+  height: 5rem;
+  margin-bottom: 1.2rem;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  border-bottom: 2px solid white;
+}
+
+#header_area h1 {
+  font-family: inherit;
+  font-size: 2.2rem;
+  color: antiquewhite;
+  background-color: transparent;
+}/*# sourceMappingURL=header.css.map */
